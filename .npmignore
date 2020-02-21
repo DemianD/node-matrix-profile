@@ -1,0 +1,4 @@
+build/
+scamp/
+.github/
+node_modules/

@@ -1,0 +1,14 @@
+{
+  "name": "node-matrix-profile",
+  "version": "1.1.0",
+  "description": "Node.js bindings to SCAMP",
+  "main": "./build/Release/binding",
+  "author": "Demian Dekoninck <demian+github@live.be>",
+  "license": "MIT",
+  "dependencies": {
+    "node-gyp": "^6.1.0"
+  },
+  "scripts": {
+    "install": "git clone https://github.com/zpzim/SCAMP.git scamp && cd scamp && git checkout 8aac4a1f3f64392d17be52576ad87c0521ebf56e && git submodule update --init --recursive && cd .. && node-gyp rebuild"
+  }
+}
